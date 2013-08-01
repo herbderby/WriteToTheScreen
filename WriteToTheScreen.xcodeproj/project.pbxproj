@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		433C9D7E17A96A68006D1A02 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433C9D7D17A96A68006D1A02 /* main.cpp */; };
 		433C9D8017A96A68006D1A02 /* WriteToTheScreen.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 433C9D7F17A96A68006D1A02 /* WriteToTheScreen.1 */; };
+		433C9D8717A97148006D1A02 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433C9D8617A97148006D1A02 /* GLUT.framework */; };
+		433C9D8917A97158006D1A02 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433C9D8817A97158006D1A02 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		433C9D7A17A96A68006D1A02 /* WriteToTheScreen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WriteToTheScreen; sourceTree = BUILT_PRODUCTS_DIR; };
 		433C9D7D17A96A68006D1A02 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		433C9D7F17A96A68006D1A02 /* WriteToTheScreen.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WriteToTheScreen.1; sourceTree = "<group>"; };
+		433C9D8617A97148006D1A02 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		433C9D8817A97158006D1A02 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433C9D8917A97158006D1A02 /* OpenGL.framework in Frameworks */,
+				433C9D8717A97148006D1A02 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		433C9D7117A96A68006D1A02 = {
 			isa = PBXGroup;
 			children = (
+				433C9D8817A97158006D1A02 /* OpenGL.framework */,
+				433C9D8617A97148006D1A02 /* GLUT.framework */,
 				433C9D7C17A96A68006D1A02 /* WriteToTheScreen */,
 				433C9D7B17A96A68006D1A02 /* Products */,
 			);
@@ -185,6 +193,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -192,6 +201,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
